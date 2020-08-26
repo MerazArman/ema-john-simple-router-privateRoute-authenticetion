@@ -1,0 +1,21 @@
+.pd-item{
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.pd-information  {
+    margin-left: 20px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.pd-information h4{
+    color: blue;
+}
+.pd-information button{
+    width: 150px;
+    height: 25px;
+    background-color: goldenrod;
+    border-radius: 5px;
+}
