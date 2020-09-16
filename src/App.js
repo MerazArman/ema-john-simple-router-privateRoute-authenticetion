@@ -9,7 +9,7 @@ import {
   Link
 } from "react-router-dom";
 import Review from './componets/Review/Review';
-import OrderManage from './componets/Review/OrderManage/OrderManage';
+import OrderManage from './componets/OrderManage/OrderManage';
 import NotFound from './componets/NotFound/NotFound';
 import ProductDetails from './componets/ProductDetails/ProductDetails';
 

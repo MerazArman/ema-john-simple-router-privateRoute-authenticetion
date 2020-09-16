@@ -13,7 +13,7 @@
 .pd-information h4{
     color: blue;
 }
-.pd-information button{
+.mainButton{
     width: 150px;
     height: 25px;
     background-color: goldenrod;
