@@ -9,7 +9,7 @@ const Cart = (props) => {
     let shippingPrice =0
     for (let i = 0; i < cartList.length; i++) {
         const pd  = cartList[i];
-        price = price + pd.price;
+        price = price + pd.price*pd.quantity;
         shippingPrice = shippingPrice + pd.shipping;
     }
     let tax = (price/80)
@@ -24,11 +24,13 @@ const Cart = (props) => {
         <h3> Order  summary</h3>
         <h4> Ordared Items {cartList.length} </h4>
         <h5> price {mathFormatter(price) }</h5>
-        <p> shipping : {shippingPrice}</p>
-        <p>VAT+ TAX: {mathFormatter(tax) }</p>
+        <p> shipping :  {mathFormatter(shippingPrice)}  </p>
+        <p>VAT+TAX: {mathFormatter(tax) }</p>
         <p> <b>Total Price {mathFormatter(price+shippingPrice+tax) } </b></p>
         <br/>
-        <Link to="/review"><button className="mainButton">Review Order </button></Link>
+            {
+                props.children
+            }
             
         </div>
     );
