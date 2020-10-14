@@ -12,6 +12,9 @@ import Review from './componets/Review/Review';
 import OrderManage from './componets/OrderManage/OrderManage';
 import NotFound from './componets/NotFound/NotFound';
 import ProductDetails from './componets/ProductDetails/ProductDetails';
+import Shipment from './componets/Shipment/shipment';
+import Login from './componets/Login/Login';
+
 
 
 function App() {
@@ -28,6 +31,12 @@ function App() {
           </Route>
           <Route path="/manage">
             <OrderManage></OrderManage>
+          </Route>
+          <Route path="/Shipment">
+            <Shipment></Shipment>
+          </Route>
+          <Route path="/login">
+           <Login></Login>
           </Route>
           <Route exact path="/">
             <Shop></Shop>
